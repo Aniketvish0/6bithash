@@ -1,9 +1,9 @@
 {
   "name": "6bithash",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "module": "./dist/index.mjs",       
-  "main": "./dist/index.cjs",         
+  "main": "./dist/index.js",         
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts", 

@@ -1,6 +1,6 @@
 {
   "name": "6bithash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "module": "./dist/index.mjs",       
   "main": "./dist/index.cjs",         

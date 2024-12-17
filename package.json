@@ -4,13 +4,7 @@
   "license": "MIT",
   "module": "./dist/index.mjs",       
   "main": "./dist/index.cjs",         
-  "types": "./dist/index.d.ts",       
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",    
-      "require": "./dist/index.cjs"    
-    }
-  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts", 
     "lint": "tsc", 

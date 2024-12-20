@@ -1,7 +1,7 @@
 import { customMap } from "./customMap";
 import { GenerateHashOptions } from "./types"
 export function generateHash(dbid: number , options : GenerateHashOptions = {}): string {
-    const { map = customMap } = options;
+    const { myMap = customMap } = options;
 
     if (dbid < 0 || !Number.isInteger(dbid)) {
       throw new Error('Input must be a non-negative integer.');
@@ -17,10 +17,10 @@ export function generateHash(dbid: number , options : GenerateHashOptions = {}):
     }
   
     const hash = chunks.map(chunk => {
-      if (!(chunk in map)) {
+      if (!(chunk in myMap)) {
         throw new Error(`Mapping not found for binary chunk: ${chunk}`);
       }
-      return map[chunk];
+      return myMap[chunk];
     }).join('');
   
     return hash;

@@ -2,7 +2,7 @@ type CustomMap = {
     [key: string]: string;
 };
 interface GenerateHashOptions {
-    map?: CustomMap;
+    myMap?: CustomMap;
 }
 
 declare function generateHash(dbid: number, options?: GenerateHashOptions): string;
